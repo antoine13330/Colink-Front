@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SigninComponent } from './_components/auth/signin/signin.component';
 import { SignupComponent } from './_components/auth/signup/signup.component';
 import { ForgotComponent } from './_components/auth/forgot/forgot.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ForgotComponent } from './_components/auth/forgot/forgot.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
