@@ -1,10 +1,10 @@
-<div [ngSwitch]="layoutType">
-  <div *ngSwitchCase="'standard'">
+<div [ngSwitch]="layoutType" class="page--wrapper">
+  <div *ngSwitchCase="'standard'" class="page--wrapper">
     <app-standard-layout>
       <router-outlet></router-outlet>
     </app-standard-layout>
   </div>
-  <div *ngSwitchCase="'auth'">
+  <div *ngSwitchCase="'auth'" class="page--wrapper">
       <app-auth-layout>
         <router-outlet></router-outlet>
       </app-auth-layout>
