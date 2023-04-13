@@ -1,7 +1,34 @@
-<nav >
-  <a routerLink="/">Home</a>
-  <a routerLink="/signin">Sign In</a>
-  <a routerLink="/signup">Sign Up</a>
-</nav>
 
+
+<mat-drawer-container class="page--wrapper" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <nav >
+      <a routerLink="/">Home</a>
+      <a routerLink="/signin">Sign In</a>
+      <a routerLink="/signup">Sign Up</a>
+      <button>button</button>
+    </nav>
+    <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button> -->
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <mat-toolbar  color="primary">
+      <span class="sidenav-toolbar--wrapper">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Co-Link</span>
+      </span>
+    </mat-toolbar>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+  <!-- router outlet  & footer -->
+  <ng-content></ng-content>
+  <!--  -->
+</mat-drawer-container>
 

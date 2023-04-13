@@ -1,0 +1,10 @@
+.sidenav-content {
+  @apply
+  w-full;
+  .sidenav-toolbar--wrapper {
+    @apply
+    flex
+    gap-4
+    items-center
+  }
+}

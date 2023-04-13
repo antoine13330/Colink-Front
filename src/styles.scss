@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+button {
+  @apply
+  grid
+  place-items-center
+}
+
+.mat-drawer-container.page--wrapper, .page--wrapper {
+  @apply
+  h-full;
+}
