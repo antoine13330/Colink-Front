@@ -1,1 +1,1 @@
-export const authLinkHref : string[] = [ 'forgot' , 'signin' , 'signup' ];
+export const authLinkHref : string[] = [ '/forgot' , '/signin' , '/signup' ];

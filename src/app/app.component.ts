@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { LayoutEventManagerService } from './_services/_event-managers/layout-event-manager.service';
 import { LayoutType } from './_models/layout/layout-manager';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { authLinkHref } from './_assets/links.data';
+import { filter } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,16 +19,20 @@ export class AppComponent {
 
   ngOnInit() {
     this._layoutEventManager.layoutType$.subscribe((layoutType) => {
-      layoutType = layoutType;
+      this.layoutType = layoutType;
+      console.log("next" , layoutType)
     });
 
-    this._router.events.subscribe((event) => {
+    this._router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event) => {
       // get url matcher
       // if url matcher match
-      console.log( event )
-      // if (  ) {
-      //   this._layoutEventManager.setLayoutType('auth');
-      // };
+      if ( authLinkHref.includes( (event as any ).url ) ) {
+        this._layoutEventManager.setLayoutType('auth');
+      } else {
+        this._layoutEventManager.setLayoutType('standard');
+      }
     });
   }
 }
