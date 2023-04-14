@@ -44,7 +44,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
     MatRippleModule,
     MatButtonModule
   ],
