@@ -1,6 +1,47 @@
-<div class="all-container">
-  <div>
-    <div class="picture-div"></div>
-    <div>Jean Pierre Polnareff</div>
+<div class="all_container">
+  <div class="PersonalInformations">
+    <p>Informations</p>
+    <div class="col-md-4 text-center text-white pt-4 Couleur">
+      <div class="Profil_Picture">
+        picture
+      </div>
+      <div class="Profil_Pseudo">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Pseudo</mat-label>
+            <input matInput class="input" type="text" [disabled]="true" placeholder="Pseudo">
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="Profil_Email">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput class="input" type="text" [disabled]="true" placeholder="Email">
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="categorie">
+        <mat-form-field appearance="fill">
+          <select [disabled]="true" matNativeControl required>
+            <option value="info">Informatique</option>
+            <option value="audi">Audiovisuel</option>
+            <option value="mark">Market-Com</option>
+            <option value="crea">Crea-Design</option>
+          </select>
+        </mat-form-field>
+
+      </div>
+    </div>
   </div>
 </div>
+<mat-tab-group>
+  <mat-tab label="Projets">
+    <div class="card-container">
+      <app-cards class="card_profil"></app-cards>
+      <app-cards class="card_profil"></app-cards>
+      <app-cards class="card_profil"></app-cards>
+      <app-cards class="card_profil"></app-cards>
+    </div>
+  </mat-tab>
+</mat-tab-group>
