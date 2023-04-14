@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfilManagementComponent } from './_components/profil-management/profil-management.component';
+import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ProfilManagementComponent } from './_components/profil-management/profi
     SignupComponent,
     ForgotComponent,
     ProfilManagementComponent,
+    ProfilPageComponent,
   ],
   imports: [
     BrowserModule,
