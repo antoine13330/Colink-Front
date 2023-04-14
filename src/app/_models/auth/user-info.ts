@@ -5,7 +5,6 @@ export interface UserInfo {
   firstName : string,
   lastName : string,
   pseudo : string,
-  birthDate : Date,
   section : WorkSection[]
 }
 
