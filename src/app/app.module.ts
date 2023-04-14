@@ -32,6 +32,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { OthersProfilPageComponent } from './pages/others-profil-page/others-profil-page.component';
 import { OthersProfilComponent } from './_components/others-profil/others-profil.component';
 import { DetailProjectComponent } from './pages/detail-project/detail-project.component';
+import { CreateProjectComponent } from './pages/create-project/create-project.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { DetailProjectComponent } from './pages/detail-project/detail-project.co
     OthersProfilPageComponent,
     OthersProfilComponent,
     DetailProjectComponent,
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,

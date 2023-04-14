@@ -7,6 +7,7 @@ import { ForgotComponent } from './_components/auth/forgot/forgot.component';
 import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
 import {OthersProfilPageComponent} from './pages/others-profil-page/others-profil-page.component';
 import { DetailProjectComponent } from './pages/detail-project/detail-project.component';
+import { CreateProjectComponent } from './pages/create-project/create-project.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path : 'profil' , component : ProfilPageComponent , pathMatch : 'full' },
   { path : 'signin' , component :  SigninComponent, pathMatch : 'full' },
   { path : 'detail' , component : DetailProjectComponent, pathMatch : 'full' },
+  { path : 'create' , component : CreateProjectComponent, pathMatch : 'full' },
   { path : 'signup' , component :  SignupComponent, pathMatch : 'full' },
   { path : 'forgot' , component : ForgotComponent, pathMatch : 'full' },
   { path : 'profils' , component : OthersProfilPageComponent, pathMatch : 'full' },
