@@ -24,6 +24,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 import { ProfilManagementComponent } from './_components/profil-management/profil-management.component';
 import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
+import { ProfilListProjectComponent } from './_components/profil-list-project/profil-list-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
     CardsComponent,
     ProfilManagementComponent,
     ProfilPageComponent,
+    ProfilListProjectComponent,
   ],
   imports: [
     BrowserModule,
