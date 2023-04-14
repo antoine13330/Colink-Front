@@ -56,18 +56,18 @@ export class AuthentificationService {
     // const base64Url = token.split('.')[1];
     // const base64 = base64Url.replace('-', '+').replace('_', '/');
     // return JSON.parse(window.atob(base64));
-    return {
-      email : 'antoinedespres13@gmail.com',
-      phone : '09 79 79 79 79' ,
-      password : 'pwdadmin',
-      firstName : 'despres',
-      lastName : 'antoine',
-      pseudo : 'antwaneuh',
-      section : ['design'],
-      jwt : {
-        token : 'fake token'
-      }
-    }
+    // return {
+    //   email : 'antoinedespres13@gmail.com',
+    //   phone : '09 79 79 79 79' ,
+    //   password : 'pwdadmin',
+    //   firstName : 'despres',
+    //   lastName : 'antoine',
+    //   pseudo : 'antwaneuh',
+    //   section : ['design'],
+    //   jwt : {
+    //     token : 'fake token'
+    //   }
+    // }
     return undefined
   }
 }
