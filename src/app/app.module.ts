@@ -28,6 +28,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { CardsComponent } from './_components/cards/cards.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
+import {MatTabsModule} from '@angular/material/tabs';
+import { OthersProfilPageComponent } from './pages/others-profil-page/others-profil-page.component';
+import { OthersProfilComponent } from './_components/others-profil/others-profil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,8 @@ import {MatRippleModule} from '@angular/material/core';
     ProfilManagementComponent,
     ProfilPageComponent,
     ProfilListProjectComponent,
+    OthersProfilPageComponent,
+    OthersProfilComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,8 @@ import {MatRippleModule} from '@angular/material/core';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule
   ],
   providers: [
     { provide : HTTP_INTERCEPTORS , useClass : TokenInterceptor , multi : true}
