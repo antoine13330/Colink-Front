@@ -18,6 +18,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { CardsComponent } from './_components/cards/cards.component';
+import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 @NgModule({
@@ -31,6 +33,7 @@ import {MatButtonModule} from '@angular/material/button';
     SigninComponent,
     SignupComponent,
     ForgotComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatCardModule
     MatRippleModule,
     MatButtonModule
   ],

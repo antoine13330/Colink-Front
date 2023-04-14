@@ -5,12 +5,9 @@
     </app-standard-layout>
   </div>
   <div *ngSwitchCase="'auth'" class="page--wrapper">
-      <app-auth-layout>
-        <router-outlet></router-outlet>
-      </app-auth-layout>
+    <app-auth-layout>
+      <router-outlet></router-outlet>
+    </app-auth-layout>
   </div>
-  <div *ngSwitchDefault>
-    <router-outlet></router-outlet>
-  </div>
-</div>
 
+</div>
