@@ -20,7 +20,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { CardsComponent } from './_components/cards/cards.component';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatRippleModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,8 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatCardModule
+    MatRippleModule,
+    MatButtonModule
   ],
   providers: [
     { provide : HTTP_INTERCEPTORS , useClass : TokenInterceptor , multi : true}
