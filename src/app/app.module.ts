@@ -22,6 +22,7 @@ import { CardsComponent } from './_components/cards/cards.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
+import { DetailProjectComponent } from './pages/detail-project/detail-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import {MatButtonModule} from '@angular/material/button';
     SignupComponent,
     ForgotComponent,
     CardsComponent,
+    DetailProjectComponent,
   ],
   imports: [
     BrowserModule,
