@@ -1,0 +1,11 @@
+.card-container {
+  @apply
+  flex
+  flex-wrap
+  justify-around
+}
+
+.card_profil {
+  @apply
+  mt-4
+}
