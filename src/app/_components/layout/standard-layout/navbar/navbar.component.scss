@@ -8,3 +8,11 @@
     items-center
   }
 }
+
+
+.sidenav {
+  @apply
+  w-full
+  p-4
+  md:w-[300px]
+}
