@@ -1,7 +1,9 @@
 <!--  on utilise une sidebar pour la navigation on insere tout dans son drawer -->
 <app-navbar>
   <!-- router outlet -->
-  <ng-content></ng-content>
+  <div class="router-outlet--wrapper">
+    <ng-content></ng-content>
+  </div>
   <app-footer></app-footer>
 </app-navbar>
 

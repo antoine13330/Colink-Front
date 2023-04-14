@@ -1,3 +1,5 @@
+import { JWT_TOKEN_RESPONSE } from "./jwt";
+
 export interface UserInfo {
   email : string,
   phone : string,
@@ -5,8 +7,8 @@ export interface UserInfo {
   firstName : string,
   lastName : string,
   pseudo : string,
-  birthDate : Date,
   section : WorkSection[]
+  jwt : JWT_TOKEN_RESPONSE
 }
 
 export type WorkSection = 'informatique' | 'design' | 'marketing' | 'audiovisuel';

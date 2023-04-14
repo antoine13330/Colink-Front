@@ -5,7 +5,42 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #BDBDBD #FFFFFF00;
+}
 
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #FFFFFF00;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FFFFFF00;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #FFFFFF00;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #BDBDBD;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #AFAFAF;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #AFAFAF;
+}
 button {
   @apply
   grid
