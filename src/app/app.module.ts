@@ -20,6 +20,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfilManagementComponent } from './_components/profil-management/profil-management.component';
 import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
+import { ProfilListProjectComponent } from './_components/profil-list-project/profil-list-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
     ForgotComponent,
     ProfilManagementComponent,
     ProfilPageComponent,
+    ProfilListProjectComponent,
   ],
   imports: [
     BrowserModule,
