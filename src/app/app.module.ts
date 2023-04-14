@@ -18,6 +18,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { CardsComponent } from './_components/cards/cards.component';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,7 @@ import { MatIconModule } from '@angular/material/icon';
     SigninComponent,
     SignupComponent,
     ForgotComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatSidenavModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [
     { provide : HTTP_INTERCEPTORS , useClass : TokenInterceptor , multi : true}
