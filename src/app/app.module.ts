@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { ProfilManagementComponent } from './_components/profil-management/profil-management.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
     SigninComponent,
     SignupComponent,
     ForgotComponent,
+    ProfilManagementComponent,
   ],
   imports: [
     BrowserModule,
