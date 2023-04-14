@@ -31,7 +31,6 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import { OthersProfilPageComponent } from './pages/others-profil-page/others-profil-page.component';
 import { OthersProfilComponent } from './_components/others-profil/others-profil.component';
-import {MatButtonModule} from '@angular/material/button';
 import { DetailProjectComponent } from './pages/detail-project/detail-project.component';
 
 @NgModule({
