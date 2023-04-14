@@ -23,6 +23,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 import { DetailProjectComponent } from './pages/detail-project/detail-project.component';
+import { CreateProjectComponent } from './pages/create-project/create-project.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { DetailProjectComponent } from './pages/detail-project/detail-project.co
     ForgotComponent,
     CardsComponent,
     DetailProjectComponent,
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,
