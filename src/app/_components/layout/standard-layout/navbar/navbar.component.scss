@@ -8,3 +8,57 @@
     items-center
   }
 }
+
+.sidenav--toolbar {
+  @apply
+  flex
+  gap-4
+  items-center
+  justify-between
+}
+.sidenav {
+  @apply
+  w-full
+  md:w-[300px];
+  nav {
+    @apply
+    flex
+    flex-col
+    p-4
+    gap-4;
+    a {
+      @apply
+      flex
+      gap-4
+      items-center
+    }
+    a.sidenav-link--active {
+      @apply
+      text-purple-600
+    }
+  }
+}
+
+.auth-button--wrapper {
+  button {
+    @apply
+    flex
+    gap-4
+    items-center
+  }
+
+}
+.sidenav-profil--top {
+  @apply
+  flex
+  gap-4
+  items-start
+  justify-between
+  w-full
+  h-full
+}
+
+.sidenav-profil {
+  @apply
+  w-full;
+}

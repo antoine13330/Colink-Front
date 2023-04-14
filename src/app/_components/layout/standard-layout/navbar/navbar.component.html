@@ -1,12 +1,47 @@
 
 
 <mat-drawer-container class="page--wrapper" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <nav >
-      <a routerLink="/">Home</a>
-      <a routerLink="/signin">Sign In</a>
-      <a routerLink="/signup">Sign Up</a>
-      <button>button</button>
+  <mat-drawer #drawer class="sidenav" mode="side">
+
+    <mat-toolbar  color="primary" class="sidenav--toolbar">
+      <div class="auth-button--wrapper">
+        <ng-container *ngIf="user; else signIn">
+          <button mat-button>
+            <mat-icon>
+              account_circle
+            </mat-icon>
+            Bonjour {{ user.pseudo }}
+          </button>
+        </ng-container>
+        <ng-template #signIn>
+          <button mat-button>
+            <mat-icon>
+              login
+            </mat-icon>
+            Sign in
+          </button>
+        </ng-template>
+
+      </div>
+      <div class="sidenav-close">
+        <button mat-icon-button (click)="drawer.toggle()">
+          <mat-icon>
+            close
+          </mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+    <div class="sidenav-profil">
+
+
+    </div>
+    <nav>
+      <a routerLink="/" routerLinkActive="sidenav-link--active">
+        <mat-icon>
+          home
+        </mat-icon>
+        Home
+      </a>
     </nav>
     <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <button (click)="showFiller = !showFiller" mat-raised-button>
@@ -17,15 +52,12 @@
   <div class="sidenav-content">
     <mat-toolbar  color="primary">
       <span class="sidenav-toolbar--wrapper">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+        <button mat-icon-button aria-label="Menu icon" (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
         <span>Co-Link</span>
       </span>
     </mat-toolbar>
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
   </div>
   <!-- router outlet  & footer -->
   <ng-content></ng-content>
