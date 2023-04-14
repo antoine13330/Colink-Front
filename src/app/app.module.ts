@@ -18,7 +18,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import {MatTreeModule} from '@angular/material/tree';
+import {MatRippleModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import {MatTreeModule} from '@angular/material/tree';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatTreeModule
+    MatRippleModule,
+    MatButtonModule
   ],
   providers: [
     { provide : HTTP_INTERCEPTORS , useClass : TokenInterceptor , multi : true}
