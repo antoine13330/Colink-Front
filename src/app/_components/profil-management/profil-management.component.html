@@ -1,1 +1,42 @@
-<p>works!</p>
+<div class="all_container">
+  <div class="PersonalInformations">
+    <p>Informations</p>
+    <div class="col-md-4 text-center text-white pt-4 Couleur">
+      <div class="Profil_Picture">
+        picture
+      </div>
+      <div class="Profil_Pseudo">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Pseudo</mat-label>
+            <input matInput class="input" type="text" [disabled]="!isEditing" placeholder="Pseudo">
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="Profil_Email">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput class="input" type="text" [disabled]="!isEditing" placeholder="Email">
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="categorie">
+        <mat-form-field appearance="fill">
+          <select [disabled]="!isEditing" matNativeControl required>
+            <option value="info">Informatique</option>
+            <option value="audi">Audiovisuel</option>
+            <option value="mark">Market-Com</option>
+            <option value="crea">Crea-Design</option>
+          </select>
+        </mat-form-field>
+
+      </div>
+      <div class="bouton">
+      <button mat-raised-button (click)="onUpdateEditMode()">edit</button>
+      {{isEditing}}
+<button mat-raised-button >Log out</button>
+</div>
+    </div>
+  </div>
+</div>

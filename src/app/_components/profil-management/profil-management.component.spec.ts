@@ -1,7 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProfilManagementComponent } from './profil-management.component';
-
 describe('ProfilManagementComponent', () => {
   let component: ProfilManagementComponent;
   let fixture: ComponentFixture<ProfilManagementComponent>;
@@ -16,7 +14,6 @@ describe('ProfilManagementComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });

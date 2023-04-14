@@ -21,6 +21,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProfilManagementComponent } from './_components/profil-management/profil-management.component';
 import { ProfilPageComponent } from './pages/profil-page/profil-page.component';
 import { ProfilListProjectComponent } from './_components/profil-list-project/profil-list-project.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +49,11 @@ import { ProfilListProjectComponent } from './_components/profil-list-project/pr
     MatSidenavModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [
     { provide : HTTP_INTERCEPTORS , useClass : TokenInterceptor , multi : true}

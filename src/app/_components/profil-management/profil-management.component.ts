@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ProfilManagementComponent {
 
+  isEditing:boolean=false
+  onUpdateEditMode(){
+    this.isEditing=!this.isEditing;
+  }
 }
